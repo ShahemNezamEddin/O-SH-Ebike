@@ -1,55 +1,129 @@
 <div class="collapse navbar-collapse" id="main-nav">
-    <ul class="navbar-nav w-auto mx-auto">
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                All Products
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">By Rating</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
-            </div>
-        </li>
+  <ul class="navbar-nav w-auto mx-auto">
+    <li class="nav-item dropdown">
+      <a
+        class="logo-font font-weight-bold nav-link text-black mr-5"
+        href="#"
+        id="all-products-link"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        All Products
+      </a>
+      <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+        <a
+          href="{% url 'products' %}?sort=name&direction=asc"
+          class="dropdown-item"
+          >By name a to z</a
+        >
+        <a
+          href="{% url 'products' %}?sort=name&direction=desc"
+          class="dropdown-item"
+          >By name z to a</a
+        >
+        <a
+          href="{% url 'products' %}?sort=category&direction=asc"
+          class="dropdown-item"
+          >By Category</a
+        >
+        <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+      </div>
+    </li>
 
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                E-bikes brands
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?category=svitch" class="dropdown-item">Svitch</a>
-                <a href="{% url 'products' %}?category=engwe" class="dropdown-item">Engwe</a>
-                <a href="{% url 'products' %}?category=svitch,engwe" class="dropdown-item">All
-                    E-bikes</a>
-            </div>
-        </li>
+    <li class="nav-item dropdown">
+      <a
+        class="logo-font font-weight-bold nav-link text-black mr-5"
+        href="#"
+        id="brands-link"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        E-bikes brands
+      </a>
+      <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+        <a href="{% url 'products' %}?category=svitch" class="dropdown-item"
+          >Svitch</a
+        >
+        <a href="{% url 'products' %}?category=engwe" class="dropdown-item"
+          >Engwe</a
+        >
+        <a
+          href="{% url 'products' %}?category=svitch,engwe"
+          class="dropdown-item"
+          >All E-bikes</a
+        >
+      </div>
+    </li>
 
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                E-bikes speed
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="#" class="dropdown-item">E-bikes 25km/u</a>
-                <a href="#" class="dropdown-item">E-bikes 45km/u</a>
-                <a href="#" class="dropdown-item">All E-bikes</a>
-            </div>
-        </li>
+    <li class="nav-item dropdown">
+      <a
+        class="logo-font font-weight-bold nav-link text-black mr-5"
+        href="#"
+        id="Price-link"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        By Price
+      </a>
+      <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
+        <a
+          href="{% url 'products' %}?sort=price&direction=asc"
+          class="dropdown-item"
+          >Price low to high</a
+        >
+        <a
+          href="{% url 'products' %}?sort=price&direction=desc"
+          class="dropdown-item"
+          >Price high to low</a
+        >
+      </div>
+    </li>
 
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Special Offers
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="#" class="dropdown-item">New Arrivals</a>
-                <a href="#" class="dropdown-item">Deals</a>
-                <a href="#" class="dropdown-item">Clearance</a>
-                <a href="#" class="dropdown-item">All
-                    Specials</a>
-            </div>
-        </li>
-    </ul>
+    <li class="nav-item dropdown">
+      <a
+        class="logo-font font-weight-bold nav-link text-black mr-5"
+        href="#"
+        id="Price-link"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        By Rating
+      </a>
+      <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
+        <a
+          href="{% url 'products' %}?sort=rating&direction=asc"
+          class="dropdown-item"
+          >Rating low to high
+        </a>
+        <a
+          href="{% url 'products' %}?sort=rating&direction=desc"
+          class="dropdown-item"
+          >Rating high to low
+        </a>
+      </div>
+    </li>
+
+    <li class="nav-item dropdown">
+      <a
+        class="logo-font font-weight-bold nav-link text-black"
+        href="#"
+        id="specials-link"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        Special Offers
+      </a>
+      <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+        <a href="#" class="dropdown-item">New Arrivals</a>
+        <a href="#" class="dropdown-item">Deals</a>
+        <a href="#" class="dropdown-item">Clearance</a>
+        <a href="#" class="dropdown-item">All Specials</a>
+      </div>
+    </li>
+  </ul>
 </div>
