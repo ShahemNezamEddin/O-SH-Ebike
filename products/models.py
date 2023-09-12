@@ -24,6 +24,17 @@ class Product(models.Model):
     motor = models.CharField(max_length=254, null=True, blank=True)
     speed = models.CharField(max_length=254, null=True, blank=True)
     battery = models.CharField(max_length=254, null=True, blank=True)
+
+    brake = models.CharField(max_length=254, null=True, blank=True)
+    frame = models.CharField(max_length=254, null=True, blank=True)
+    tires = models.CharField(max_length=254, null=True, blank=True)
+    range_pas_mode = models.CharField(max_length=254, null=True, blank=True)
+    range_electric_mode = models.CharField(max_length=254, null=True, blank=True)
+    gross_weight = models.CharField(max_length=254, null=True, blank=True)
+    bike_weight = models.CharField(max_length=254, null=True, blank=True)
+    charging_time = models.CharField(max_length=254, null=True, blank=True)
+    display = models.CharField(max_length=254, null=True, blank=True)
+
     price = models.DecimalField(max_digits=6, decimal_places=2)
     rating = models.DecimalField(
         max_digits=6, decimal_places=2, null=True, blank=True)
