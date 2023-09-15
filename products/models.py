@@ -38,8 +38,22 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     rating = models.DecimalField(
         max_digits=6, decimal_places=2, null=True, blank=True)
+
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
+    image_1_url = models.URLField(max_length=1024, null=True, blank=True)
+    image_1 = models.ImageField(null=True, blank=True)
+    image_tires_url = models.URLField(max_length=1024, null=True, blank=True)
+    image_tires = models.ImageField(null=True, blank=True)
+    image_brake_url = models.URLField(max_length=1024, null=True, blank=True)
+    image_brake = models.ImageField(null=True, blank=True)
+    image_display_url = models.URLField(max_length=1024, null=True, blank=True)
+    image_display = models.ImageField(null=True, blank=True)
+    image_gears_url = models.URLField(max_length=1024, null=True, blank=True)
+    image_gears = models.ImageField(null=True, blank=True)
+    image_safety_url = models.URLField(max_length=1024, null=True, blank=True)
+    image_safety = models.ImageField(null=True, blank=True)
+    
 
     def __str__(self):
         return self.name
